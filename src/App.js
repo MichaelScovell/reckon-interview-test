@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+// Defining imports for the counting application
 import './App.css';
+import { React, useState, useEffect } from 'react';
 
+// Defining a function to house the logic for the application
 function App() {
+  // Defining variables to store state for the counter
+  const [counter, setCounter] = useState(0);
+
+  // Define a function to handle incrementing
+  function handleIncrement() {
+    // Increase the counter
+    setCounter(counter + 1);
+  }
+
+
+  // UI for the counting application 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Counter: {counter}</h1>
+      {/* Increment Button */}
+      <button onClick={handleIncrement}>Increment</button>
     </div>
   );
 }
