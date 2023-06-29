@@ -7,6 +7,7 @@ This application was built using the following technologies:
 
 ## How to use
 To run this application:
-1) Clone the repository using `git clone repoURL` replacing the repoURL with the url of the repo
-2) Once cloned, run `npm install` to install the required libraries and packages
-3) Once installed, to run the application firstly cd into the src folder by running `cd src` and then run `npm run start` to launch the application.
+1) Clone the repository using `git clone repoURL` replacing the repoURL with the url of the repo.
+2) CD into the `reckon-interview-test` folder.
+3) Run `npm install` to install the required libraries and packages.
+4) Once installed, to run the application run `npm run start`.
